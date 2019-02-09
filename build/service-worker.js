@@ -11,11 +11,11 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("/workbox-v3.6.3/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "/workbox-v3.6.3"});
+importScripts("/repo-searcher/workbox-v3.6.3/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "/repo-searcher/workbox-v3.6.3"});
 
 importScripts(
-  "/precache-manifest.83096efa771a3beb22c8d33a7bbb2202.js"
+  "/repo-searcher/precache-manifest.983cb78cc15750c6042963b38d63c6c8.js"
 );
 
 workbox.clientsClaim();
@@ -29,7 +29,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/index.html", {
+workbox.routing.registerNavigationRoute("/repo-searcher/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
