@@ -1,0 +1,71 @@
+.filter-bar {
+  width: 200px;
+  flex-shrink: 0;
+  margin-top: 10px;
+  padding: 15px 20px 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.10);
+}
+.filter-bar label {
+  font-size: 18px;
+}
+.filter-antd-option {
+  display: block;
+  margin-bottom: 6px;
+  line-height: 32px;
+}
+.filter-option {
+    font-variant: tabular-nums;
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 4px 11px;
+    margin-bottom: 6px;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    transition: all 0.3s;
+    display: block;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    width: 100%;
+}
+.filter-option:hover {
+  border-color: #40a9ff;
+  border-right-width: 1px ;
+}
+
+.filter-option:focus {
+  border-color: #40a9ff;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  border-right-width: 1px;
+}
+
+.filter-option::placeholder {
+  opacity: 0.5;
+}
+
+.filter-option::-webkit-inner-spin-button, 
+.filter-option::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.filter-option-checkbox {
+  margin-left: 10px;
+}
+
+.filter-option-small {
+  width: 95px;
+}
+
+@media (max-width:600px) {
+  .filter-bar {
+    height: 450px;
+    width: 100%;
+  }
+  .filter-option-small {
+    width: 100%;
+  }
+}
