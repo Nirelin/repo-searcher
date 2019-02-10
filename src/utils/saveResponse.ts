@@ -3,7 +3,7 @@ import starsRound from './starsRound';
 const saveResponse = (response) => {
   return {
     totalCount: response.data.total_count,
-    items: response.data.items.map((item)=>{
+    items: response.data.items.map((item) => {
       return {
         name: item.name,
         owner: item.owner.login,
@@ -13,9 +13,8 @@ const saveResponse = (response) => {
         language: item.language,
         stars: starsRound(item.stargazers_count),
         forks: `${item.forks}`
-      }
+      };
     })
-  }
-}
+  };
+};
 export default saveResponse;
-

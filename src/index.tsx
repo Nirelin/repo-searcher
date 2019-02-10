@@ -2,16 +2,16 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import createSagaMiddleware from 'redux-saga';
+import reduxSaga from 'redux-saga';
 import App from './App';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import reducer from './store/reducer'
-import { watcher } from './store/sagas'
+import reducer from './store/reducer';
+import { watcher } from './store/sagas';
 
-const sagaMiddleware = createSagaMiddleware()
+const sagaMiddleware = reduxSaga();
 
-const store = createStore(reducer, compose(applyMiddleware(sagaMiddleware)))
+const store = createStore(reducer, compose(applyMiddleware(sagaMiddleware)));
 
 sagaMiddleware.run(watcher);
 

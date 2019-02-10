@@ -1,10 +1,12 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier", "tslint-config-airbnb"],
   "jsRules": {
     "object-literal-sort-keys": false
   },
   "rules": {
+    "trailing-comma": [true, {"multiline": {"objects": "never"}}],
     "ordered-imports": false,
+    "variable-name": false,
     "object-literal-sort-keys": false,
     "no-unused-variable": {"severity": "warning"},
     "jsx-no-lambda": false

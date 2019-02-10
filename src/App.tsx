@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import FoundRepos from './components/RepoList';
+import RepoList from './components/RepoList';
 import FilterTab from './components/FilterTab';
 import RepoSearcher from './components/RepoSearcher';
 
@@ -9,9 +9,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <RepoSearcher />
-        <div className='content'>
+        <div className="content">
           <FilterTab />
-          <FoundRepos />
+          <RepoList />
         </div>
       </div>
     );
@@ -19,4 +19,3 @@ class App extends React.Component {
 }
 
 export default App;
-
